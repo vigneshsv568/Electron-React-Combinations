@@ -21,6 +21,7 @@
     "@babel/core": "^7.15.4",
     "css-loader": "^6.2.0",
     "electron": "^14.0.0",
+    "electron-reload": "^2.0.0-alpha.1",
     "style-loader": "^3.2.1"
   },
   "dependencies": {
