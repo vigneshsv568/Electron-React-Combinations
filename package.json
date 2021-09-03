@@ -1,0 +1,37 @@
+{
+  "name": "electron-react-combination",
+  "version": "1.0.0",
+  "description": "Combinations..",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "watch": "webpack --config webpack.common.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vigneshsv568/Electron-React-Combinations.git"
+  },
+  "author": "vignesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vigneshsv568/Electron-React-Combinations/issues"
+  },
+  "homepage": "https://github.com/vigneshsv568/Electron-React-Combinations#readme",
+  "devDependencies": {
+    "@babel/core": "^7.15.4",
+    "css-loader": "^6.2.0",
+    "electron": "^14.0.0",
+    "style-loader": "^3.2.1"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.39.0",
+    "sass-loader": "^12.1.0",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0"
+  }
+}
