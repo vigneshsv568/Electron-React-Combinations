@@ -1,4 +1,4 @@
-const{app,BrowserWindow} = require('electron');
+const{app,BrowserWindow,ipcMain, Notification} = require('electron');
 const path = require('path');
 const isDev = !app.isPackaged;
 function createWindow(){
@@ -7,7 +7,9 @@ function createWindow(){
         height: 800,
         backgroundColor:"white",
         webPreferences:{
-            nodeIntegration:true
+            nodeIntegration: true,
+            contextIsolation: false,
+            enableRemoteModule: true,
         }
     })
 win.loadFile('index.html')
@@ -21,7 +23,9 @@ if(isDev) {
 
 app.whenReady().then(createWindow);
     
-
+ipcMain.on('notify',(_, message) =>{
+    new Notification({title:'Notification', body:message}).show();
+})
 app.on('window-all-closed' , () =>{
     if(process.platform !=='darwin'){
         app.quit();

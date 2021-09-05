@@ -1,10 +1,11 @@
 import React from 'react';
+import HomeView from './views/Home';
 
 export default function App(){
 
-    const title = "hello I am vignesh-1";
-    const enhance = title + ' - React app';
-    return(
-        <h1>{enhance}</h1>
-    )
+ return(
+     <HomeView />
+ )
+   
+   
 }
